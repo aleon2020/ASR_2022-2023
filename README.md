@@ -18,7 +18,11 @@ Preguntas Test 1.pdf: Test realizado el 21/02/2023.
 
 Preguntas Test 2.pdf: Test realizado el 25/04/2023.
 
-## 3. Índice de paquetes
+## 3. Hoja de comandos de ROS2
+
+Comandos ROS2.pdf: Incluye todos los comandos que hemos visto en el curso.
+
+## 4. Índice de paquetes
 
 Estos son los paquetes que componen cada uno de los directorios correspondientes a cada tema:
 
@@ -36,13 +40,13 @@ Paquetes Tema 6: br2_bt_bumpgo, br2_bt_patrolling, br2_navigation, br2_tiago.
 
 NOTA: El paquete br2_tiago aparece en prácticamente todos los directorios ya que es el encargado de lanzar la simulación.
 
-## 4. Libro de referencia utilizado en la asignatura
+## 5. Libro de referencia utilizado en la asignatura
 
 A Concise Introduction to Robot Programming with ROS2 Francisco Martín Rico.pdf
 
-## 5. Creación de un workspace, uso y ejecución de un paquete
+## 6. Creación de un workspace, uso y ejecución de un paquete
 
-### 5.1 Creación y activación de un workspace
+### 6.1 Creación y activación de un workspace
 
 ```sh
 $ cd
@@ -59,7 +63,7 @@ $ source ~/<my_workspace>/install/setup.bash
 $ echo “source ~/<my_workspace>/install/setup.bash” >> /.bashrc
 ```
 
-### 5.2 Creación y ejecución de un paquete
+### 6.2 Creación y ejecución de un paquete
 
 ```sh
 $ cd ~/<my_workspace>/src
@@ -68,4 +72,15 @@ $ cd ~/<my_workspace>
 $ colcon build –symlink-install // colcon build –packages-select <my_package>
 $ source install/setup.sh
 $ ros2 run <my_package> <executable>
+```
+
+## 7. Creación y guardado de un mapa usando Nav2
+
+```sh
+$ ros2 launch br2_tiago sim.launch.py
+$ rivz2 –ros-args -p use_sim_time:=true
+$ ros2 launch slam_toolbox online_async.launch.py params_file:=<path completo a mapper_class_params_online_async.yaml> use_sim_time:=true
+$ ros2 launch nav2_map_server map_saver_server.launch.py
+$ ros2 run teleop_twist_keyboard teleop_twist_keyboard –ros-args -r cmd_vel:=key_vel -p use_sim_time:=true
+$ ros2 run nav2_map_server map_saver_cli –ros-args -p use_sim_time:=true
 ```
