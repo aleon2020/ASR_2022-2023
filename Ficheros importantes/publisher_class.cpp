@@ -5,6 +5,8 @@
 #include "std_msgs/msg/int32.hpp"
 
 using namespace std::chrono_literals;
+
+// Indican cuándo y por dónde entra un argumento.
 using std::placeholders::_1;
 
 class PublisherNode : public rclcpp::Node

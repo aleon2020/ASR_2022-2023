@@ -4,6 +4,7 @@
 // Tipo de mensaje.
 #include "std_msgs/msg/int32.hpp"
 
+// Indican cuándo y por dónde entra un argumento.
 using std::placeholders::_1;
 
 class SubscriberNode : public rclcpp::Node
