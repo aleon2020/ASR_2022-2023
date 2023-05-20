@@ -66,7 +66,7 @@ $ mkdir -p <my_workspace>/src
 $ cd <my_workspace>/src/
 $ git clone https://github.com/fmrico/book_ros2.git
 $ cd ..
-$ colcon build –symlink-install
+$ colcon build --symlink-install
 $ source install/setup.sh
 ```
 Ejemplo de ejecucion de programa una vez realizado lo anterior:
@@ -79,7 +79,7 @@ $ ros2 run br2_basics logger
 
 ```sh
 $ cd ~/<my_workspace>/src
-$ ros2 pkg create <my_package> --dependencies
+$ ros2 pkg create <my_package> --dependencies <dependencies>
 ```
 
 Una vez hemos desarrollado nuestro paquete (programas, CMake, etc), realizamos lo siguiente:
@@ -90,5 +90,3 @@ $ colcon build –symlink-install // colcon build –packages-select <my_package
 $ source install/setup.sh
 $ ros2 run <my_package> <executable>
 ```
-
-
