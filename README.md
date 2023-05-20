@@ -86,7 +86,7 @@ Una vez hemos desarrollado nuestro paquete (programas, CMake, etc), realizamos l
 
 ```sh
 $ cd ~/<my_workspace>
-$ colcon build –symlink-install // colcon build –packages-select <my_package>
+$ colcon build --symlink-install // colcon build --packages-select <my_package>
 $ source install/setup.sh
 $ ros2 run <my_package> <executable>
 ```
