@@ -20,11 +20,17 @@ public:
       std::bind(&SubscriberNode::callback, this, _1));
   }
 
-  // Formato del mensaje recibido:
+  // Formato del mensaje recibido por el suscriptor:
   // [INFO] [tiempo_recibido] [nombre_nodo]: Hello 1
   // [INFO] [tiempo_recibido] [nombre_nodo]: Hello 2
   // ...
   // [INFO] [tiempo_recibido] [nombre_nodo]: Hello N
+  // Formato del mensaje recibido por el topic:
+  // data: 1
+  // ---
+  // data: 2
+  // ---
+  // data: N
   void callback(const std_msgs::msg::Int32::SharedPtr msg)
   {
     RCLCPP_INFO(get_logger(), "Hello %d", msg->data);
