@@ -14,52 +14,84 @@ https://docs.google.com/document/d/1OVAjoF7pPmQrFZVN-w-QSDjo9j6fItquN1dXVo3j8cg/
 
 IMPORTANTE: Para hacer uso del índice interactivo que viene implementado en el resumen, debes descargar el documento en formato PDF.
 
-## 2. Preguntas tipo test realizadas en las pruebas de clase
 
-Preguntas Test 1.pdf: Test realizado el 21/02/2023.
-
-Preguntas Test 2.pdf: Test realizado el 25/04/2023.
-
-## 3. Hoja de comandos de ROS2
-
-Comandos ROS2.pdf: Incluye todos los comandos que hemos visto en el curso.
-
-## 4. Índice de paquetes
-
-Estos son los paquetes que componen cada uno de los directorios correspondientes a cada tema:
-
-Paquetes Tema 1: my_package.
-
-Paquetes Tema 2: br2_basics, br2_tiago.
-
-Paquetes Tema 3: br2_fsm_bumpgo_cpp, br2_fsm_bumpgo_py, br2_tiago.
-
-Paquetes Tema 4: br2_tf2_detector, br2_tiago.
-
-Paquetes Tema 5: br2_tiago, br2_tracking, br2_tracking_msgs, br2_vff_avoidance.
-
-Paquetes Tema 6: br2_bt_bumpgo, br2_bt_patrolling, br2_navigation, br2_tiago.
-
-Por ultimo, en el directorio 'Ficheros importantes' se incluye un ejemplo basico de un publicador y de un suscriptor, ademas de un directorio en el que se incluyen los diferentes tipos de CMakeLists.txt que podemos encontrarnos (lo visto el ultimo dia de clase).
-
-NOTA: El paquete br2_tiago aparece en prácticamente todos los directorios ya que es el encargado de lanzar la simulación.
-
-## 5. Libro de referencia utilizado en la asignatura
-
-A Concise Introduction to Robot Programming with ROS2 Francisco Martín Rico.pdf
-
-## 6. Activación de ROS2 en los laboratorios de la universidad
+## 2. Activación de ROS2 en los laboratorios de la universidad
 
 ```sh
 $ source /opt/ros/humble/setup.bash
 $ echo “source /opt/ros/humble/setup.bash” » ./bashrc
 ```
 
-IMPORTANTE: Esto debe hacerse siempre que abrimos una nueva terminal.
+IMPORTANTE: Esto debe hacerse SIEMPRE que abrimos una nueva terminal.
 
-## 7. Creación de un workspace, uso y ejecución de un paquete
+## 3. Uso de ros2 bag
 
-### 7.1 Creación y activación de un workspace
+### 3.1 Configuración del entorno
+
+Es recomendable abrir la terminal desde el HOME (carpeta personal) para crear el directorio en el que se guardarán los bags.
+
+```sh
+$ mkdir bags
+$ cd bags/
+```
+
+En otra terminal, lanzamos el nodo que hayamos desarrollado. Por ejemplo:
+
+```sh
+$ ros2 run demo_nodes_cpp talker
+```
+
+Para asegurarte que todo está yendo bien, ejecuta en una terminal diferente el comando ros2 topic list, en el que debe aparecer el topic que está utilizando el nodo que hemos lanzado.
+
+### 3.2 Funciones básicas de ros2 bag
+
+Para crear un bag y almacenar los mensajes que se están publicando en el topic utilizado por el nodo, debemos ejecutar el siguiente comando:
+
+```sh
+$ ros2 bag record <topic>
+```
+
+Una vez hayamos almacenado la cantidad de mensajes que se nos pida, detenemos el proceso con Ctrl+c, y vemos como dentro de la carpeta bags se ha creado una nueva carpeta llamada rosbag2_<fecha> (nombre por defecto), que debe incluir un archivo metadata.yaml y otro llamado <bag_name>.db3.
+
+Para crear el bag con un nombre que nosotros queramos ejecutamos el mismo comando que antes pero con la opción -o <bag_name>:
+
+```sh
+$ ros2 bag record <topic> -o <bag_name>
+```
+
+Además, también existe la posibilidad de incluir más de un topic cuando se está creando el bag (<topic1> ... <topicN> en vez de <topic>). Si queremos tener en cuenta TODOS los topics que se están ejecutando en ese momento, le añadimos la opción -a:
+
+```sh
+$ ros2 bag record -a -o <bag_name>
+```
+
+Una vez hemos creado nuestro bag, podemos obtener información del mismo (nombre, tamaño, id de almacenamiento, duración, cantidad de mensajes, topics utilizados, etc) ejecutando el siguiente comando:
+
+```sh
+$ ros2 bag info <bag_name>
+```
+
+### 3.3 Reproducir contenido de un bag 
+
+Para ver el contenido que hemos almacenado en nuestro bag, debemos realizar lo siguiente:
+
+En una primera terminal debemos reproducir el contenido del bag mediante el siguiente comando:
+
+```sh
+$ ros2 bag play <bag_name>
+```
+
+En una segunda terminal, debemos ejecutar ros2 topic echo <topic>, donde <topic> es el topic al que se han estado enviando mensajes mientras se estaba creando el paquete:
+
+```sh
+$ ros2 topic echo <topic>
+```
+
+IMPORTANTE: Estos dos últimos comandos deben ejecutarse casi de forma simultánea (siempre primero ros2 bag play <bag_name>), ya que si reproducimos el contenido del bag y tardamos más tiempo en ejecutar ros2 topic echo <topic> que lo que dura el bag, no se podrá ver ningún mensaje ya que la reproducción del bag ha finalizado.
+
+## 4. Creación de un workspace, uso y ejecución de un paquete
+
+### 4.1 Creación y activación de un workspace
 
 Es recomendable abrir la terminal desde el HOME (carpeta personal).
 
@@ -77,7 +109,7 @@ Ejemplo de ejecucion de programa una vez realizado lo anterior:
 $ ros2 run br2_basics logger
 ```
 
-### 7.2 Creación y ejecución de un paquete
+### 4.2 Creación y ejecución de un paquete
 
 ```sh
 $ cd ~/<my_workspace>/src
