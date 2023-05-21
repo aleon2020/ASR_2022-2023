@@ -6,6 +6,8 @@ A continuación se detallan brevemente todos los contenidos que se encuentran en
 
 ## 1. Resumen de los contenidos de teoría
 
+Resumen Teoría ASR.pdf: Resumen de teoría en formato PDF.
+
 Este enlace te redirigirá a un resumen en Google Docs que comprende todos los contenidos teóricos vistos en la asignatura, en el que cualquiera que tenga acceso a este documento puede añadir cualquier contribución:
 
 https://docs.google.com/document/d/1OVAjoF7pPmQrFZVN-w-QSDjo9j6fItquN1dXVo3j8cg/edit?usp=sharing
