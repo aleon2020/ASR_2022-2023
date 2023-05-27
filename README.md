@@ -2,7 +2,17 @@
 
 ¡Bienvenido! En este repositorio se encuentran todos los materiales correspondientes a la asignatura de Arquitectura Software para Robots.
 
-A continuación se detallan brevemente todos los contenidos que se encuentran en este repositorio, con el objetivo de facilitar la preparación del examen final teórico de la asignatura:
+Parte del material que se encuentra subido a este repositorio nos ha sido proporcionado por Francisco Martín Rico, profesor encargado de impartir esta asignatura y coordinador del Grado en Ingeniería de Robótica Software de la Universidad Rey Juan Carlos de Fuenlabrada. A continuación se indican los enlaces correspondientes a todos estos materiales:
+
+Enlace a docencia-fmrico, donde se encuentran repositorios relacionados con ROS2:
+
+https://github.com/Docencia-fmrico
+
+Enlace al repositorio original que contiene todos los paquetes utilizados durante la asignatura:
+
+https://github.com/fmrico/book_ros2
+
+A continuación se detallan brevemente todos los contenidos que se encuentran en este repositorio, con el objetivo de facilitar la preparación del examen final de la asignatura (muchos de ellos se obvian por la clara evidencia en su nombre):
 
 ## 1. Resumen de los contenidos de teoría
 
