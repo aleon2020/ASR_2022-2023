@@ -24,8 +24,13 @@ https://docs.google.com/document/d/1OVAjoF7pPmQrFZVN-w-QSDjo9j6fItquN1dXVo3j8cg/
 
 IMPORTANTE: Para hacer uso del índice interactivo que viene implementado en el resumen, debes descargar el documento en formato PDF.
 
+## 2. Mini-tests realizados en clase y examen final
 
-## 2. Activación de ROS2 en los laboratorios de la universidad
+Ficheros 'Preguntas Test X.pdf': Contiene todas las preguntas de los dos mini-tests realizados en momentos intermedios del curso.
+
+Directorio 'Enunciado examen final': Contiene el enunciado del examen final de la asignatura, se compone de 2 preguntas, una más teórica y otra más relacionada con las prácticas realizadas a lo largo del curso.
+
+## 3. Activación de ROS2 en los laboratorios de la universidad
 
 ```sh
 $ source /opt/ros/humble/setup.bash
@@ -34,9 +39,9 @@ $ echo “source /opt/ros/humble/setup.bash” » ./bashrc
 
 IMPORTANTE: Esto debe hacerse SIEMPRE que abrimos una nueva terminal.
 
-## 3. Uso de ros2 bag
+## 4. Uso de ros2 bag
 
-### 3.1 Configuración del entorno
+### 4.1 Configuración del entorno
 
 Es recomendable abrir la terminal desde el HOME (carpeta personal) para crear el directorio en el que se guardarán los bags.
 
@@ -53,7 +58,7 @@ $ ros2 run demo_nodes_cpp talker
 
 Para asegurarte que todo está yendo bien, ejecuta en una terminal diferente el comando ros2 topic list, en el que debe aparecer el topic que está utilizando el nodo que hemos lanzado.
 
-### 3.2 Funciones básicas de ros2 bag
+### 4.2 Funciones básicas de ros2 bag
 
 Para crear un bag y almacenar los mensajes que se están publicando en el topic utilizado por el nodo, debemos ejecutar el siguiente comando:
 
@@ -81,7 +86,7 @@ Una vez hemos creado nuestro bag, podemos obtener información del mismo (nombre
 $ ros2 bag info <bag_name>
 ```
 
-### 3.3 Reproducir contenido de un bag 
+### 4.3 Reproducir contenido de un bag 
 
 Para ver el contenido que hemos almacenado en nuestro bag, debemos realizar lo siguiente:
 
@@ -99,9 +104,9 @@ $ ros2 topic echo <topic>
 
 IMPORTANTE: Estos dos últimos comandos deben ejecutarse casi de forma simultánea (siempre primero ros2 bag play <bag_name>), ya que si reproducimos el contenido del bag y tardamos más tiempo en ejecutar ros2 topic echo <topic> que lo que dura el bag, no se podrá ver ningún mensaje ya que la reproducción del bag ha finalizado.
 
-## 4. Creación de un workspace, uso y ejecución de un paquete
+## 5. Creación de un workspace, uso y ejecución de un paquete
 
-### 4.1 Creación y activación de un workspace
+### 5.1 Creación y activación de un workspace
 
 Es recomendable abrir la terminal desde el HOME (carpeta personal).
 
@@ -119,7 +124,7 @@ Ejemplo de ejecucion de programa una vez realizado lo anterior:
 $ ros2 run br2_basics logger
 ```
 
-### 4.2 Creación y ejecución de un paquete
+### 5.2 Creación y ejecución de un paquete
 
 ```sh
 $ cd ~/<my_workspace>/src
