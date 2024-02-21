@@ -22,15 +22,19 @@ Resumen Teoría ASR.pdf: Resumen de teoría en formato PDF.
 
 IMPORTANTE: Para hacer uso del índice interactivo que viene implementado en el resumen, debes descargar el documento en formato PDF.
 
-## 2. Mini-tests realizados en clase, examen final y prácticas
+## 2. Mini-tests realizados en clase y examen final
 
 Ficheros 'Preguntas Test X.pdf': Contiene todas las preguntas de los dos mini-tests realizados en momentos intermedios del curso.
 
 Directorio 'Enunciado examen final': Contiene el enunciado del examen final de la asignatura, se compone de 2 preguntas, una más teórica y otra más relacionada con las prácticas realizadas a lo largo del curso.
 
+## 3. Paquetes y prácticas
+
+Directorio 'Paquetes': Contiene todos los paquetes de ejemplo vistos en clase a lo largo de la asignatura.
+
 Directorio 'Prácticas': Contiene todas las prácticas realizadas a lo largo de la asignatura.
 
-## 3. Activación de ROS2 en los laboratorios de la universidad
+## 4. Activación de ROS2 en los laboratorios de la universidad
 
 Abre una terminal EN TU HOME y ejecuta los siguientes comandos:
 
@@ -52,9 +56,9 @@ Abre una nueva terminal y comprueba que ROS2 funciona correctamente ejecutando e
 $ ros2
 ```
 
-## 4. Creación de un workspace, uso y ejecución de un paquete
+## 5. Creación de un workspace, uso y ejecución de un paquete
 
-### 4.1 Creación y activación de un workspace
+### 5.1 Creación y activación de un workspace
 
 Es recomendable abrir la terminal desde el HOME (carpeta personal).
 
@@ -72,7 +76,7 @@ Ejemplo de ejecucion de programa una vez realizado lo anterior:
 $ ros2 run br2_basics logger
 ```
 
-### 4.2 Creación y ejecución de un paquete
+### 5.2 Creación y ejecución de un paquete
 
 ```sh
 $ cd ~/<my_workspace>/src
