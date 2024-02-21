@@ -22,11 +22,13 @@ Resumen Teoría ASR.pdf: Resumen de teoría en formato PDF.
 
 IMPORTANTE: Para hacer uso del índice interactivo que viene implementado en el resumen, debes descargar el documento en formato PDF.
 
-## 2. Mini-tests realizados en clase y examen final
+## 2. Mini-tests realizados en clase, examen final y prácticas
 
 Ficheros 'Preguntas Test X.pdf': Contiene todas las preguntas de los dos mini-tests realizados en momentos intermedios del curso.
 
 Directorio 'Enunciado examen final': Contiene el enunciado del examen final de la asignatura, se compone de 2 preguntas, una más teórica y otra más relacionada con las prácticas realizadas a lo largo del curso.
+
+Directorio 'Prácticas': Contiene todas las prácticas realizadas a lo largo de la asignatura.
 
 ## 3. Activación de ROS2 en los laboratorios de la universidad
 
