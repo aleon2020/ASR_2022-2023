@@ -18,21 +18,21 @@ IMPORTANTE: SI OBSERVAS QUE HAY ALGÚN ERROR O ALGO QUE FALTE EN ALGÚN ARCHIVO 
 
 ## 1. Resumen de los contenidos de teoría
 
-Resumen Teoría ASR.pdf: Resumen de teoría en formato PDF.
+Fichero [Resumen Teoría ASR.pdf](https://github.com/aleon2020/ASR_2022-2023/blob/main/Resumen%20Teor%C3%ADa%20ASR.pdf): Resumen de teoría en formato PDF.
 
 IMPORTANTE: Para hacer uso del índice interactivo que viene implementado en el resumen, debes descargar el documento en formato PDF.
 
 ## 2. Mini-tests realizados en clase y examen final
 
-Ficheros 'Preguntas Test X.pdf': Contiene todas las preguntas de los dos mini-tests realizados en momentos intermedios del curso.
+Ficheros ['Preguntas Test 1.pdf'](https://github.com/aleon2020/ASR_2022-2023/blob/main/Preguntas%20Test%201.pdf) y ['Preguntas Test 2.pdf'](https://github.com/aleon2020/ASR_2022-2023/blob/main/Preguntas%20Test%201.pdf): Contiene todas las preguntas de los dos mini-tests realizados en momentos intermedios del curso.
 
-Directorio 'Enunciado examen final': Contiene el enunciado del examen final de la asignatura, se compone de 2 preguntas, una más teórica y otra más relacionada con las prácticas realizadas a lo largo del curso.
+Directorio ['Enunciado examen final'](https://github.com/aleon2020/ASR_2022-2023/tree/main/Enunciado%20examen%20final): Contiene el enunciado del examen final de la asignatura, se compone de 2 preguntas, una más teórica y otra más relacionada con las prácticas realizadas a lo largo del curso.
 
 ## 3. Paquetes y prácticas
 
-Directorio 'Paquetes': Contiene todos los paquetes de ejemplo vistos en clase a lo largo de la asignatura.
+Directorio ['Paquetes'](https://github.com/aleon2020/ASR_2022-2023/tree/main/Paquetes): Contiene todos los paquetes de ejemplo vistos en clase a lo largo de la asignatura.
 
-Directorio 'Prácticas': Contiene todas las prácticas realizadas a lo largo de la asignatura.
+Directorio ['Prácticas'](https://github.com/aleon2020/ASR_2022-2023/tree/main/Pr%C3%A1cticas): Contiene todas las prácticas realizadas a lo largo de la asignatura.
 
 ## 4. Activación de ROS2 en los laboratorios de la universidad
 
