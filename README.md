@@ -18,7 +18,7 @@ IMPORTANTE: SI OBSERVAS QUE HAY ALGÚN ERROR O ALGO QUE FALTE EN ALGÚN ARCHIVO 
 
 ## 1. Resumen de los contenidos de teoría
 
-Fichero [Resumen Teoría ASR.pdf](https://github.com/aleon2020/ASR_2022-2023/blob/main/Resumen%20Teor%C3%ADa%20ASR.pdf): Resumen de teoría en formato PDF.
+Fichero ['Resumen Teoría ASR.pdf'](https://github.com/aleon2020/ASR_2022-2023/blob/main/Resumen%20Teor%C3%ADa%20ASR.pdf): Resumen de teoría en formato PDF.
 
 IMPORTANTE: Para hacer uso del índice interactivo que viene implementado en el resumen, debes descargar el documento en formato PDF.
 
