@@ -6,11 +6,9 @@ Parte del material que se encuentra subido a este repositorio nos ha sido propor
 
 Enlace a docencia-fmrico, donde se encuentran repositorios relacionados con ROS2:
 
-https://github.com/Docencia-fmrico
+[REPOSITORIOS DE ROS2](https://github.com/Docencia-fmrico)
 
-Enlace al repositorio original que contiene todos los paquetes utilizados durante la asignatura:
-
-https://github.com/fmrico/book_ros2
+[PAQUETES ROS2 UTILIZADOS EN LA ASIGNATURA](https://github.com/fmrico/book_ros2)
 
 A continuación se detallan brevemente todos los contenidos que se encuentran en este repositorio, con el objetivo de facilitar la preparación del examen final de la asignatura (muchos de ellos se obvian por la clara evidencia en su nombre).
 
